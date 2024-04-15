@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<title>International Data Science Olympiad (IDSOL)</title>
 	<meta property="og:title" content="International Data Science Olympiad"/>
-	<meta property="og:description" content="IDSOL is a global ecosystem of contests and events that serves as a platform for students to learn, practice, and expand their knowledge in data science. Its flagship competition — the titular International Data Science Olympiad Finals — invites students from all over the world to submit proposals to solve real-world challenges with data science as presentations and prototypes showcased to judges from academic, industry, and government backgrounds."/>
+	<meta property="og:description" content="The International Data Science Olympiad (IDSOL) is a competition that invites all students and recent graduates (not just in tech) to propose interesting ideas for using data and sources from the real world, from discovering insights gleaned from open data to novel applications of current and emerging machine learning capabilities."/>
 	<meta property="og:image" content="https://idsol.org/logo-idsol.jpg"/>
   <link rel="stylesheet" href="css/css.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -28,42 +28,113 @@
     </ul>
 
     <h1>Contact IDSOL</h1>
-    <p>The International Data Science Olympiad is a global organization with regional headquarters in the three major regions of the world. Please contact the office of your region directly.</p>
+    <p>Contact the regional conference of the International Data Science Olympiad according to which country or territory that you reside in.</p>
 
-    <img id="map" src="img/idsol-regions.png">
+    <img id="map" src="img/idsol-regions.png" style="min-width:888px;">
 
     <div class="divTable" style="width: 100%">
       <div class="divTableBody">
         <div class="divTableRow">
+
           <div class="divTableCell">
-            <h3>IDSOL AMER</h3>
-            Americas-Oceania Office<br>
+            <h1>IDSOL AMER</h1>
+            Americas-Oceania Conference<br>
             International Data Science Olympiad<br>
-            2857 Sherwood Heights Drive<br>
-            Oakville, Ontario, L6J 7J9<br>
-            Canada<br>
-            <a href="mailto:amer@idsol.org">amer@idsol.org</a></div>
-          <div class="divTableCell">
-            <h3>IDSOL EMEA</h3>
-            Europe-Middle East-Africa Office<br>
-            International Data Science Olympiad<br>
-            Harju maakond,&nbsp;Kesklinna linnaosa,<br>
-            Narva mnt 5, 10117, Tallinn,&nbsp;<br>
-            Estonia<br>
-            <a href="mailto:emea@idsol.org">emea@idsol.org</a><br>
-            <br>
+            Waterloo, Ontario, N2L 2G1, Canada<br>
+            <h3>Established Representatives</h3>
+            🇦🇷 Argentina<br>
+            🇦🇺 Australia<br>
+            🇧🇷 Brazil<br>
+            🇧🇲 Bermuda<br>
+            🇨🇦 Canada<br>
+            🇲🇽 Mexico<br>
+            🇳🇿 New Zealand<br>
+            🇵🇦 Panama<br>
+            🇵🇬 Papua New Guinea<br>
+            🇺🇸 United States<br>
           </div>
+
           <div class="divTableCell">
-            <h3>IDSOL APAC</h3>
-            Asia-Pacific Office<br>
+            <h1>IDSOL EMEA</h1>
+            Europe-Middle East-Africa Conference<br>
             International Data Science Olympiad<br>
-            6 On Ping Street, Shek Mun,<br>
-            Shatin, New Territories,<br>
-            Hong Kong<br>
-            <a href="mailto:apac@idsol.org">apac@idsol.org</a></div>
+            Tallinn, 45109, Estonia<br>
+            <h3>Established Representatives</h3>
+            🇦🇹 Austria<br>
+            🇬🇧 Britannia<br>
+            🇪🇪 Estonia<br>
+            🇫🇷 France<br>
+            🇩🇪 Germany<br>
+            🇳🇱 Netherlands<br>
+            🇮🇷 Iran<br>
+            🇷🇺 Russia<br>
+            🇸🇦 Saudi Arabia<br>
+            🇨🇭 Switzerland<br>
+            🇺🇦 Ukraine<br>
+          </div>
+
+          <div class="divTableCell">
+            <h1>IDSOL APAC</h1>
+            Asia-Pacific Conference<br>
+            International Data Science Olympiad<br>
+            Shatin, Hong Kong SAR, China<br>
+            <h3>Established Representatives</h3>
+            🇧🇩 Bangladesh<br>
+            🇨🇳 China<br>
+            🇭🇰 Hong Kong<br>
+            🇮🇳 India<br>
+            🇰🇿 Kazakhstan<br>
+            🇲🇴 Macau<br>
+            🇲🇳 Mongolia<br>
+            🇵🇭 Philippines<br>
+            🇸🇬 Singapore<br>
+            🇹🇼 Taiwan<br>
+            🇻🇳 Vietnam<br>
+          </div>
+
+          <div class="divTableCell">
+<form action="/submit-form" method="post">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="title">Title or Role:</label><br>
+<input type="text" id="title" name="title" required><br><br>
+
+<label for="legal_entity">Legal Entity:</label><br>
+<input type="text" id="legal_entity" name="legal_entity" required><br><br>
+
+<label for="entity_type">Entity Type:</label><br>
+<select id="entity_type" name="entity_type" required>
+<option value="Forprofit">Forprofit</option>
+<option value="Nonprofit">Nonprofit</option>
+<option value="Academic">Academic</option>
+<option value="Government">Government</option>
+</select><br><br>
+
+<label for="region">Region:</label><br>
+<select id="region" name="region" required>
+<option value="AMER">AMER</option>
+<option value="APAC">APAC</option>
+<option value="EMEA">EMEA</option>
+</select><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="phone">Phone:</label><br>
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="4" cols="17"></textarea><br><br>
+
+<input type="submit" value="Submit">
+</form>
+          </div>
+
         </div>
       </div>
     </div>
+
 
 </body>
 <script src="js/js.js"></script>

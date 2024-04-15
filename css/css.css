@@ -1,9 +1,13 @@
-body {background:#f7f7f7;font-family:'Roboto Condensed',sans-serif;margin:20 auto;}
+@import url("https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css");
+body {background:#f7f7f7;font-family:"Computer Modern Serif",sans-serif;letter-spacing: 0.05em;margin:20 auto;}
 #c {max-width:768px;width:50%;margin:2em auto;display:block;}
 #map {width:95%;}
 #header {padding-bottom:24px}
 #header img{vertical-align:middle;padding-right:32px}
 #header span{font-size:32px}
+
+a {color: gray;}
+a:hover {color: darkgray;}
 
 ul.botnav {
 	max-width: 768px;
@@ -58,8 +62,8 @@ ul.topnav li.right {float: right;}
 .btn:hover{color:#666;cursor:pointer;}
 
 .content{margin: 20px 0}
-.content li{margin-left: 20px}
-.content ul{font-size:20px;
+.content li{margin:0 20px 20px}
+.content ul{font-size:inherit;
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;}
@@ -76,7 +80,7 @@ ul.topnav li.right {float: right;}
 .divTable{ display: table; }
 .divTableRow { display: table-row; }
 .divTableHeading { display: table-header-group;}
-.divTableCell, .divTableHead { display: table-cell;}
+.divTableCell, .divTableHead { display: table-cell; min-width: 300px}
 .divTableHeading { display: table-header-group;}
 .divTableFoot { display: table-footer-group;}
 .divTableBody { display: table-row-group;}
