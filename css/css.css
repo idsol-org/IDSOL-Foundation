@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css");
 body {background:#f7f7f7;font-family:"Computer Modern Serif",sans-serif;letter-spacing: 0.05em;margin:20 auto;}
+footer {font-size:9px;text-align:center;}
 #c {max-width:768px;width:50%;margin:2em auto;display:block;}
 #map {width:95%;}
 #header {padding-bottom:24px}
